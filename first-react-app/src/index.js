@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './components/app.jsx';
+import App from './components/appPropsChildren.jsx';
 import reportWebVitals from './reportWebVitals';
+// import AppPassFn from './components/appPropsFn.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
