@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './components/appPropsChildren.jsx';
+// import App from './components/appPropsChildren.jsx';
 import reportWebVitals from './reportWebVitals';
 // import AppPassFn from './components/appPropsFn.jsx';
-
+// import App from './components/state.jsx'
+import App from './components/StateTimer.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
