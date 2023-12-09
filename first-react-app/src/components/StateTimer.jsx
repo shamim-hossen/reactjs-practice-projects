@@ -1,4 +1,6 @@
 import React,{Component} from "react";
+import './app.style.css'
+
 
 class StateTimer extends Component{
     state={
@@ -48,17 +50,17 @@ class StateTimer extends Component{
 
     render(){
         return(
-            <div>
-                <div>
-                    <h1>Simple timer</h1>
-                    <button onClick={this.decrementCount}>-</button>
-                    <span>{this.state.count}</span>
-                    <button onClick={this.incrementCount}>+</button>
+            <div className="App">
+                <h1 className="Heading">Simple timer</h1>
+                <div className="Container">
+                    <button className="Btn" onClick={this.decrementCount}>-</button>
+                    <span className="Text">{this.state.count}</span>
+                    <button className="Btn" onClick={this.incrementCount}>+</button>
                 </div>
-                <div>
-                    <button onClick={this.startTimer}>start</button>
-                    <button onClick={this.stopTimer}>stop</button>
-                    <button onClick={this.resetTimer}>Reset</button>
+                <div className="Container">
+                    <button className="Btn" onClick={this.startTimer}>start</button>
+                    <button className="Btn" onClick={this.stopTimer}>stop</button>
+                    <button className="Btn" onClick={this.resetTimer}>Reset</button>
                 </div>
             </div>
         )
